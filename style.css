@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playball&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /*font-family: 'Nunito', sans-serif;
+     */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 14vw;
+}
+
+.navigation ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.logo {
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin-left: 4vw;
+    gap: 1rem;
+}
+
+.sobre h3 {
+    font-family: 'Playball', cursive;
+    font-size: 2rem;
+}
+
+.sobre h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    color: #FF5876;
+}
+
+.sobre p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.sobre .botoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.sobre .botoes button {
+    width: 144px;
+    height: 34px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sobre .botoes #btn-1,
+.sobre .botoes #btn-1 a {
+    background-color: #FF5876;
+    color: white;
+    border: none;
+}
+
+.sobre .botoes #btn-2 a {
+    color: black;
+}
+
+.imgs .background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.imgs .pedroo {
+    width: 360px;
+    height: 470px;
+}
+
+.imgs {
+    display: flex;
+}
+
+.imgs ul {
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.imgs ul li {
+    list-style: none;
+}
+
+.imgs ul li img {
+    width: 50px;
+
+}
+
+.imgs ul li:nth-child(2n+1) {
+    margin-left: -25px;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    min-width: 100vw;
+    grid-gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    margin: 2rem auto;
+}
+
+.card {
+    box-shadow: 0.4em 0.4em .6em -0.4em #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.card p span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    padding-left: 0.5rem;
+}
+
+.rodape {
+    width: 100vw;
+    position: sticky;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.rodape p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.redes ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.rodape ul li i {
+    font-size: 1.5rem;
+}
+
+@media(max-width: 920px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .info .sobre {
+        order: 2;
+    }
+
+    .info .imgs {
+        order: 1;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+}
+
+@media(max-width: 670px) {
+    .sobre {
+        max-width: 80vw;
+    }
+
+    .imgs {
+        max-width: 100vw;
+        margin: 1rem;
+    }
+
+    .imgs .pedroo {
+        max-width: 280px;
+        max-height: 350px;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .cabecalho {
+        padding: 1rem 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 0.5rem;
+        margin-right: 1vw;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .rodape {
+        flex-wrap: wrap;
+    }
+
+    .sobre {
+        gap: 1rem;
+        max-width: 90vw;
+    }
+}

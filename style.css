@@ -5,10 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    /*font-family: 'Nunito', sans-serif;
-     */
 }
-
+html{
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
     color: #000;
@@ -33,6 +33,8 @@ a {
 .navigation ul li {
     list-style: none;
     cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .logo {
@@ -52,6 +54,7 @@ a {
     margin-left: 4vw;
     gap: 1rem;
 }
+
 
 .sobre h3 {
     font-family: 'Playball', cursive;

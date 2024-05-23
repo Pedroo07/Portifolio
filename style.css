@@ -110,6 +110,7 @@ a {
 .imgs .pedroo {
     width: 360px;
     height: 470px;
+    border-radius: 2%;
 }
 
 .imgs {
